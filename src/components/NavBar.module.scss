@@ -1,0 +1,9 @@
+.nav {
+  display: none;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  float: left;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
