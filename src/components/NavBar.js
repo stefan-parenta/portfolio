@@ -1,32 +1,36 @@
 import React from "react";
 import styles from "./NavBar.module.scss";
-import { useState, useEffect } from "react";
+import { DiGithubBadge } from "react-icons/di";
+import { SiLinkedin } from "react-icons/si";
+import resume from "../assets/Stefan-Parenta-Resume.pdf";
 
 const NavBar = () => {
-  const [pos, setPos] = useState(false);
-  useEffect(() => {
-    document.addEventListener("scroll", (e) => {
-      let scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 900) {
-        setPos(true);
-      } else {
-        setPos(false);
-      }
-    });
-  }, []);
-
   return (
-    <div
+    <nav
       className={styles.nav}
-      style={{
-        backgroundColor:
-          pos === true ? "rgba(32, 0, 0, 1)" : "rgba(0, 0, 0, 0)",
-        display: pos === true ? "unset" : "none",
-        animation: pos === true ? "fadeInAnimation ease 3s" : "",
-      }}
     >
-      NavBar
-    </div>
+      <ul>
+        <li>
+          <h2 className={styles.h2}><a href="#aboutme">Stefan Parenta</a></h2>
+        </li>
+        <li className={styles.links}>
+          <a href="#aboutme">Home</a>
+        </li>
+        <li className={styles.links}>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li className={styles.links}>
+          <a href="#contactme">Contact Me</a>
+        </li>
+        <li className={styles.resume}><a download href={resume}>Resume</a></li>
+        <li className={styles.end}>
+            <a className={styles.jump} href="https://www.github.com/stefan-parenta" target="_blank" rel="noreferrer" ><DiGithubBadge className={styles.icon} size={30}/></a>
+        </li>
+        <li>
+          <a className={styles.jump} href="https://www.linkedin.com/in/stefan-parenta-59232b262/" target="_blank" rel="noreferrer" ><SiLinkedin className={styles.icon} size={20}/></a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

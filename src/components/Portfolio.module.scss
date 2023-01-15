@@ -1,4 +1,26 @@
 .container {
-  height: 100vh;
+  height: 90vh;
   background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    text-align: center;
+  }
+}
+
+.anchor {
+  display: inline-block;
+  position: relative;
+  color: blue;
+  top: -100px;
+  visibility: hidden;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(12rem, 16rem));
+  grid-template-rows: min-content;
+  gap: 2rem;    
 }

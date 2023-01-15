@@ -1,21 +1,41 @@
 import React from "react";
 import styles from "./AboutMe.module.scss";
 import selfie from "../assets/aistefan.jpg";
+import Typist from 'react-typist-component';
+import hand from "../assets/waving.png";
 
 const AboutMe = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles["left-container"]}>
-        <img className={styles.selfie} src={selfie} alt="Selfie" />
-        <h1>Stefan Parenta</h1>
-        <p>Software Development Student - Mohawk College</p>
-      </div>
+    <section id="aboutme">
+      <div className={styles.container}>
       <div className={styles["right-container"]}>
-        <a href="#portfolio">Portfolio</a>
-
-        <a href="#contactme">Contact Me</a>
+          <img src={selfie} className={styles.selfie}></img>
+        </div>
+        <div className={styles.abouttext}>
+          <div className={styles.info}>
+            <Typist>
+              <Typist.Delay ms={100} />
+              <span className={styles.span}>&lt;body&gt;</span>
+            </Typist>
+            <div className={styles.description}>
+              <Typist>
+                <Typist.Delay ms={2000} />
+                <span className={styles.span}>&lt;h1&gt;</span>
+                <h2 className={styles.h2}>
+                  Hello! <br/>
+                  I'm Stefan. <br /> Developer from Hamilton, Ontario.
+                </h2>
+                <span className={styles.span}>&lt;/h1&gt;</span>
+              </Typist>
+            </div>
+            <Typist>
+            <Typist.Delay ms={1000} />
+              <span className={styles.span}>&lt;/body&gt;</span>
+            </Typist>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
