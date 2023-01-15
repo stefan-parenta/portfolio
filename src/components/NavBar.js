@@ -11,10 +11,10 @@ const NavBar = () => {
     >
       <ul>
         <li>
-          <h2 className={styles.h2}><a href="#aboutme">Stefan Parenta</a></h2>
+          <h2 className={styles.h2}><a href="#top">Stefan Parenta</a></h2>
         </li>
         <li className={styles.links}>
-          <a href="#aboutme">Home</a>
+          <a href="#top">Home</a>
         </li>
         <li className={styles.links}>
           <a href="#portfolio">Portfolio</a>
@@ -23,7 +23,7 @@ const NavBar = () => {
           <a href="#contactme">Contact Me</a>
         </li>
         <li className={styles.resume}><a download href={resume}>Resume</a></li>
-        <li className={styles.end}>
+        <li className={styles.right}>
             <a className={styles.jump} href="https://www.github.com/stefan-parenta" target="_blank" rel="noreferrer" ><DiGithubBadge className={styles.icon} size={30}/></a>
         </li>
         <li>

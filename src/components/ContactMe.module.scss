@@ -1,13 +1,15 @@
+.section {
+  height: 90vh;
+}
 .container {
   padding: 30px;
   width: 40%;
-  margin: 50px;
+  margin: 3px;
   font-family: 'Nunito', sans-serif;
   color: black;
 }
 
 .form {
-  color: black;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -26,7 +28,7 @@
   color: black;
   
   &-name {
-    width: 80%;
+    width: 100%;
     margin: 2%;
     margin-top: 0;
     margin-bottom: 10%;
@@ -34,7 +36,7 @@
   }
 
   &-phone {
-    width: 80%;
+    width: 100%;
     margin: 2%;
     margin-bottom: 10%;
     color: black;
@@ -42,7 +44,7 @@
   }
 
   &-email {
-    width: 80%;
+    width: 100%;
     margin: 2%;
     color: black;
 
@@ -89,4 +91,8 @@
   border: 1px solid white;
   cursor: pointer;
   padding: 3px;
+}
+
+.icon {
+  margin-top: 0;
 }

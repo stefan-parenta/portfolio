@@ -62,8 +62,8 @@ li a {
   flex-grow: 1;
 }
 
-.end {
-  margin-left: 45%;
+.right {
+  margin-left: 600px;
   justify-self: flex-end;
 }
 
@@ -72,7 +72,6 @@ li a {
     transform: translateY(-7%);
     display: inline-block;
     text-decoration: none;
-    margin: 5px;
   }
 
   .icon {

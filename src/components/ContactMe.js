@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from "./ContactMe.module.scss";
+import { TiMail } from "react-icons/ti";
 
 
 const ContactMe = () => {
@@ -18,7 +19,8 @@ const ContactMe = () => {
   };
 
   return (
-    <section id="contactme">
+    <section className={styles.section} id="contactme">
+      <TiMail size={100}/>
       <div className={styles.container}>
         <form className={styles.form} ref={form} onSubmit={sendEmail}>
           <div className={styles['left']}>
