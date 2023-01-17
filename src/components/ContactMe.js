@@ -14,21 +14,21 @@ const ContactMe = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     "service_w0ml4lj",
-    //     "template_n07bbnm",
-    //     form.current,
-    //     "0IjdYf2NpdvqqWX2u"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_w0ml4lj",
+        "template_n07bbnm",
+        form.current,
+        "0IjdYf2NpdvqqWX2u"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     toast.success("Sent!");
     setName("");
     setPhone("");
