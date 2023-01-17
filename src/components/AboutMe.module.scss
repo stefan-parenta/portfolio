@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   background-color: #212121;
+  align-items: center;
   ul {
     list-style: none;
   }
@@ -10,10 +11,12 @@
 
 .selfie {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: 40%;
   margin: 50px;
   border-radius: 50%;
+  position: relative;
+  top: 6%;
 }
 
 .right-container {
@@ -52,7 +55,7 @@
   line-height: 1;
   text-shadow: 4px 4px 1px #03811c;
   padding-left: 12px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .span {
@@ -62,5 +65,5 @@
   font-weight: 400;
   text-shadow: none;
   margin: 3px 0;
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: "Source Code Pro", sans-serif;
 }

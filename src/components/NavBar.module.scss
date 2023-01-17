@@ -1,12 +1,10 @@
 .nav {
   position: sticky;
   top: 0;
-  width: 100%;
-  float: left;
   background-color: #212121;
   margin: 0;
   z-index: 1;
-  padding: 0.4% 0.4% 0.4% 3%;
+  width: 100vw;
 }
 
 .h2 {
@@ -14,10 +12,9 @@
   white-space: nowrap;
   padding-right: 80px;
   padding-left: 30px;
-  margin-left: 10%;
 }
 
-ul{
+ul {
   display: flex;
   align-items: center;
   list-style: none;
@@ -40,45 +37,38 @@ li a {
 
 .links {
   &:hover {
-    text-shadow: -.25px -.25px 0 white, 
-                .25px .25px white;
+    text-shadow: -0.25px -0.25px 0 white, 0.25px 0.25px white;
   }
 }
 
+.right {
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+
 .resume {
-  background-color: rgba($color: #6c6c6c, $alpha: 1.0);
+  background-color: rgba($color: #6c6c6c, $alpha: 1);
   color: lightgrey;
   padding: 0.5% 1% 0.5% 1%;
   margin-left: 2%;
   &:hover {
-    background-color: rgba($color: #212121, $alpha: 1.0);
+    background-color: rgba($color: #212121, $alpha: 1);
     a {
       color: rgb(151, 151, 151);
     }
   }
 }
-
-.placeholder {
-  flex-grow: 1;
-}
-
-.right {
-  margin-left: 600px;
-  justify-self: flex-end;
-}
-
 .jump {
-    position: relative;
-    transform: translateY(-7%);
-    display: inline-block;
-    text-decoration: none;
-  }
+  position: relative;
+  transform: translateY(-7%);
+  display: inline-block;
+  text-decoration: none;
+}
 
-  .icon {
-    &:hover {
-      fill: #03811c;
-        padding-bottom: 20px;
-        transition: 0.2s;
-    }
+.icon {
+  &:hover {
+    fill: rgb(88, 207, 55);
+    padding-bottom: 20px;
+    transition: 0.2s;
   }
-
+}
